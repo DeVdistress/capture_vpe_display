@@ -3,26 +3,30 @@ test project for build git:://git.ti.com/glsdk/omapdrmtest.git
 
 ## how build libdce
 
-0.```bash
+0.
+```bash
 cd /home/workspace
 ```
 
-1.```bash
+1.
+```bash
 git clone git://git.omapzoom.org/repo/libdce.git
 ```
 
 2.run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
 
-
-3.```bash
+3.
+```bash
 ./autogen.sh --host=arm-linux-gnueabihf
 ```
 
-4.```bash
+4.
+```bash
 make
 ```
 
-5.```bash
+5.
+```bash
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
 ## INFO for reading v4l2 capture video
