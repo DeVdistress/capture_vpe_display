@@ -3,30 +3,19 @@ test project for build git:://git.ti.com/glsdk/omapdrmtest.git
 
 ## how build libdce
 
-0.
 ```bash
 cd /home/workspace
-```
 
-1.
-```bash
 git clone git://git.omapzoom.org/repo/libdce.git
 ```
 
-2.run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
+run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
 
-3.
 ```bash
 ./autogen.sh --host=arm-linux-gnueabihf
-```
 
-4.
-```bash
 make
-```
 
-5.
-```bash
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
 ## INFO for reading v4l2 capture video
@@ -87,6 +76,4 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
  Gstreamer doesn't work because VPE accepts only ALTERNATE mode (each field is presented as separate buffer - alternate top and bottom field), 
  while v4l2src plugin supports INTERLACED mode (both fields is presented in a single buffer). To get rid of jitter,
  you will need to modify the v4l2src plugin to support captured field in ALTERNATE mode as understood by VPE.
- Follow below link to understand different modes for interlace arrangements - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
- 
- [not working plugin for deinterlacer gstv4l2src.c](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+ Follow below link to understand different modes for interlace arrangements - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field), [not working plugin for deinterlacer gstv4l2src.c](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
