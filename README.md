@@ -18,7 +18,7 @@ make
 
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
-## INFO for reading v4l2 capture video
+## info for reading v4l2 capture video
 
 [first](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
 
@@ -37,13 +37,13 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 
 [Dual Camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
 
-[Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
-
 [Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
 
 [IPC](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_IPC.html?highlight=dce)
 
 [Software_Developers_Guide](https://processors.wiki.ti.com/index.php/DRA7xx_GLSDK_Software_Developers_Guide)
+
+[Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
 ## trouble with interlaced video
 1. my topic in texas instruments
