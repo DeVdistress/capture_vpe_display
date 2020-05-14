@@ -2,44 +2,54 @@
 test project for build git:://git.ti.com/glsdk/omapdrmtest.git
 
 ## how build libdce
-0.
-```bash
+
+0.```bash
 cd /home/workspace
 ```
-1.
-```bash
+
+1.```bash
 git clone git://git.omapzoom.org/repo/libdce.git
 ```
-2.
-run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
 
-3.
-```bash
+2.run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
+
+
+3.```bash
 ./autogen.sh --host=arm-linux-gnueabihf
 ```
-4.
-```bash
+
+4.```bash
 make
 ```
-5.
-```bash
+
+5.```bash
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
 ## INFO for reading v4l2 capture video
 
 [first](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
+
 [second](https://jayrambhia.com/blog/capture-v4l2)
+
 [doc from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
 
 ## MAIN INFO
 [Processor SDK Linux](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/index.html)
+
 [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
+
 [Gstreamer pipelines for AM572x](https://developer.ridgerun.com/wiki/index.php?title=Gstreamer_pipelines_for_AM572x)
+
 [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+
 [Dual Camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
+
 [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
+
 [Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
+
 [IPC](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_IPC.html?highlight=dce)
+
 [Software_Developers_Guide](https://processors.wiki.ti.com/index.php/DRA7xx_GLSDK_Software_Developers_Guide)
 
 ## trouble with interlaced video
@@ -74,4 +84,5 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
  while v4l2src plugin supports INTERLACED mode (both fields is presented in a single buffer). To get rid of jitter,
  you will need to modify the v4l2src plugin to support captured field in ALTERNATE mode as understood by VPE.
  Follow below link to understand different modes for interlace arrangements - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
- [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+ 
+ [not working plugin for deinterlacer gstv4l2src.c](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
