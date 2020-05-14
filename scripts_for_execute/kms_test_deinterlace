@@ -1,0 +1,11 @@
+#! /bin/bash
+
+/home/root/stop_weston
+
+/home/root/stop_all_nkbvs_daemons
+
+/home/root/debug/all_cams_on
+
+../bin/capture_vpe_display 704 280 yuyv 704 560 yuyv 1 3 -s 35:1024x768
+
+/home/root/debug/all_cams_off

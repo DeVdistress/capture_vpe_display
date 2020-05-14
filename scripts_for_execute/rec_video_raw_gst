@@ -1,0 +1,17 @@
+#!/bin/bash
+
+video_chan1=1
+raw_res_w=704
+raw_res_h=280
+int_res_w=704
+int_res_h=560
+filename=/home/root/disk_ssd/video_nv12.raw
+bitrate=1000
+lelvel_mp4=6
+
+echo "Start record RAW-video to" ${filename} 
+
+gst-launch-1.0 v4l2src device=/dev/video${video_chan1} io-mode=4 ! 'video/x-raw,format=(string)YUY2, width=(int)'"${raw_res_w}"', height=(int)'"${raw_res_h}"'' ! vpe num-input-buffers=8 ! 'video/x-raw,format=(string)NV12, width=(int)'"${int_res_w}"', height=(int)'"${int_res_h}"', interlaced=true, framerate=25/1' ! filesink location=${filename}
+
+
+

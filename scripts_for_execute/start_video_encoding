@@ -1,0 +1,18 @@
+#!/bin/bash
+
+video_chan1=1
+raw_res_w=704
+raw_res_h=280
+int_res_w=704
+int_res_h=560
+filename=/home/root/disk_ssd/video_nv12.raw
+out_filename=/home/root/disk_ssd/video_enc.avi
+bitrate=1000
+lelvel_mp4=6
+fps=25
+
+echo "Start ecoding video to" ${filename} 
+
+../bin/videnc2test ${int_res_w} ${int_res_h} 1000 ${filename} ${out_filename} ${fps} ${bitrate} mpeg4 simple 5 OMAPDRM
+
+#../bin/videnc2test ${int_res_w} ${int_res_h} 1000 ${filename} ${out_filename} ${fps} ${bitrate} jpeg simple 5 OMAPDRM  
