@@ -82,15 +82,15 @@ make viddec3test
  /etc/init.d/weston stop && sleep 1 && capturevpedisplay 704 280 yuyv 704 560 yuyv 1 3 -s 35:800x480
 ```
 4. test-v4l2-m2m
- a. recorded a file my.yuv using yavta
+ - recorded a file my.yuv using yavta
  ```bash
  yavta -c80 -p -F/home/root/my.yuv --skip 2 -t 1/50 -f YUYV -s 704x280 /dev/video2
  ```
- b. i converted my interlaced my.yuv file to my deinterlaced my_out.yuv file
+ - i converted my interlaced my.yuv file to my deinterlaced my_out.yuv file
  ```bash
  test-v4l2-m2m /dev/video0 /home/root/my.yuv 704 280 yuyv /home/root/my_out.yuv 704 560 yuyv 1 1 80
  ```
- c. play on PC
+ - play on PC
  ```bash
  ffplay -f rawvideo -pix_fmt yuyv422 -video_size 704x560 -framerate 50 -i my_out.yuv
  ```
