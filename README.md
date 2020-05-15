@@ -19,28 +19,21 @@ make
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
 ## how build
-<div class="text-white bg-gray-dark mb-2">
-build capture_vpe_display, v4l2capturedisplay, videnc2test
-</div>
+- **build capture_vpe_display, v4l2capturedisplay, videnc2test**
+
 ###### TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
 ```bash
 make all
 ```
-<div class="text-white bg-gray-dark mb-2">
-build v4l2capturedisplay
-</div>
+- **build v4l2capturedisplay**
 ```bash
 make v4l2capturedisplay
 ```
-<div class="text-white bg-gray-dark mb-2">
-build videnc2test
-</div>
+- **build videnc2test**
 ```bash
 make videnc2test
 ```
-<div class="text-white bg-gray-dark mb-2">
-**build viddec3test**
-</div>
+- **build viddec3test**
 
 ###### TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
 ```bash
