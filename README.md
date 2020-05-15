@@ -20,6 +20,7 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 ```
 ## how build
 build capture_vpe_display, v4l2capturedisplay, videnc2test
+
 ######TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
 ```bash
 make all
@@ -33,6 +34,7 @@ build videnc2test
 make videnc2test
 ```
 **build viddec3test**
+
 ######TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
 ```bash
 make viddec3test
