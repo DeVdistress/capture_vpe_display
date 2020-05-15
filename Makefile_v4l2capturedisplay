@@ -1,6 +1,6 @@
 EXECUTABLE  = v4l2capturedisplay
 
-SRCDIR		  = src src/utils
+SRCDIR        = src src/utils
 INCLUDEDIR    = $(SRCDIR) 
 INCLUDEDIR   +=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/omap 
 INCLUDEDIR   +=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include/libdrm
