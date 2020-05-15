@@ -9,7 +9,7 @@ OBJDIR        = obj
 DEPDIR        = deps
 BINDIR        = bin
 EXCLUDE_FILES = src/utils/vpe-common.c src/utils/display-x11.c src/utils/display-kmscube.c src/utils/display-wayland.c
-EXCLUDE_FILES+= src/v4l2capturedisplay.c src/videnc2test.c src/capturevpedisplay.c src/utils/demux.h src/utils/demux.c
+EXCLUDE_FILES+= src/v4l2capturedisplay.c src/videnc2test.c src/capturevpedisplay.c
 
 MY_DEFINE	:=
 #MY_DEFINE	+= -DDEBUG_ON_PC_SIDE
