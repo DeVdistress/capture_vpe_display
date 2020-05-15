@@ -42,30 +42,30 @@ make viddec3test
 
 ## info for reading v4l2 capture video
 
-[first](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
+- [capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
 
-[second](https://jayrambhia.com/blog/capture-v4l2)
+- [capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
 
-[doc from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
+- [doc about v4l2 from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
 
 ## MAIN INFO
-[Processor SDK Linux](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/index.html)
+- [Processor SDK Linux](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/index.html)
 
-[About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
+- [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
 
-[Gstreamer pipelines for AM572x](https://developer.ridgerun.com/wiki/index.php?title=Gstreamer_pipelines_for_AM572x)
+- [Gstreamer pipelines for AM572x](https://developer.ridgerun.com/wiki/index.php?title=Gstreamer_pipelines_for_AM572x)
 
-[not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+- [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
 
-[Dual Camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
+- [Dual Camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
 
-[Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
+- [Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
 
-[IPC](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_IPC.html?highlight=dce)
+- [IPC](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_IPC.html?highlight=dce)
 
-[Software_Developers_Guide](https://processors.wiki.ti.com/index.php/DRA7xx_GLSDK_Software_Developers_Guide)
+- [Software_Developers_Guide](https://processors.wiki.ti.com/index.php/DRA7xx_GLSDK_Software_Developers_Guide)
 
-[Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
+- [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
 ## trouble with interlaced video
 1. my topic in texas instruments
