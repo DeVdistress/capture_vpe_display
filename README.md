@@ -68,20 +68,20 @@ make viddec3test
 - [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
 ## trouble with interlaced video
-1. my topic in texas instruments
+**1.** my topic in texas instruments
  [AM5728: Interlaced video capture issue](https://e2e.ti.com/support/processors/f/791/t/835475)
 
-2. my topic in texas instruments
+**2.** my topic in texas instruments
  [AM5728: VIP driver issue](https://e2e.ti.com/support/processors/f/791/t/838687)
  
-3. runing capturevpedisplay https://git.ti.com/glsdk/omapdrmtest/trees/master
+**3.** runing capturevpedisplay https://git.ti.com/glsdk/omapdrmtest/trees/master
  (work fine with deinterlacer on vpe without wayland/weston)
  vpe works with deinterlacer in mode Alternating Field.
  in order to find out the desired mode for display execute: modetest
  ```bash
  /etc/init.d/weston stop && sleep 1 && capturevpedisplay 704 280 yuyv 704 560 yuyv 1 3 -s 35:800x480
 ```
-4. test-v4l2-m2m
+**4.** test-v4l2-m2m
  - recorded a file my.yuv using yavta
  ```bash
  yavta -c80 -p -F/home/root/my.yuv --skip 2 -t 1/50 -f YUYV -s 704x280 /dev/video2
@@ -94,7 +94,7 @@ make viddec3test
  ```bash
  ffplay -f rawvideo -pix_fmt yuyv422 -video_size 704x560 -framerate 50 -i my_out.yuv
  ```
-5. twike of gstreamer plugin for working deinterlacer
+**5.** twike of gstreamer plugin for working deinterlacer
  Gstreamer doesn't work because VPE accepts only ALTERNATE mode (each field is presented as separate buffer - alternate top and bottom field), 
  while v4l2src plugin supports INTERLACED mode (both fields is presented in a single buffer). To get rid of jitter,
  you will need to modify the v4l2src plugin to support captured field in ALTERNATE mode as understood by VPE.
