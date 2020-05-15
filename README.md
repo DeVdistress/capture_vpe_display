@@ -18,6 +18,26 @@ make
 
 make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
+## how build
+build capture_vpe_display, v4l2capturedisplay, videnc2test
+ TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
+```bash
+make all
+```
+build v4l2capturedisplay
+```bash
+make v4l2capturedisplay
+```
+build videnc2test
+```bash
+make videnc2test
+```
+build viddec3test
+ TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
+```bash
+make viddec3test
+```
+
 ## info for reading v4l2 capture video
 
 [first](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
