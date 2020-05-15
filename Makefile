@@ -36,25 +36,25 @@ else
 endif
 
 
-all: createdir build_info $(OBJDIR)/$(EXECUTABLE) print_size copy_to_bin subsystem_make_videnc2test subsystem_make_v4l2capturedisplay #subsystem_make_clean_viddec3test
+all: createdir build_info $(OBJDIR)/$(EXECUTABLE) print_size copy_to_bin videnc2test v4l2capturedisplay #viddec3test
 
 
-subsystem_make_v4l2capturedisplay:
+v4l2capturedisplay:
 	@make -f Makefile_v4l2capturedisplay	
 
-subsystem_make_clean_v4l2capturedisplay:
+clean_v4l2capturedisplay:
 	@make -f Makefile_v4l2capturedisplay clean
 
-subsystem_make_viddec3test:
+viddec3test:
 	@make -f Makefile_viddec3test	
 
-subsystem_make_clean_viddec3test:
+clean_viddec3test:
 	@make -f Makefile_viddec3test clean
 	
-subsystem_make_videnc2test:
+videnc2test:
 	@make -f Makefile_videnc2test	
 
-subsystem_make_clean_videnc2test:
+clean_videnc2test:
 	@make -f Makefile_videnc2test clean
 
 
@@ -159,7 +159,7 @@ copy_to_bin: print_size
 	
 PATH_TO_SDK := $(shell v='$(SDK_PATH_TARGET)'; echo "$${v%*}")
 	
-clean: subsystem_make_clean_viddec3test subsystem_make_clean_videnc2test subsystem_make_clean_v4l2capturedisplay
+clean: clean_viddec3test clean_videnc2test clean_v4l2capturedisplay
 	rm -fr $(OBJDIR) $(DEPDIR) $(BINDIR)
 	
 .PHONY: copy_to_bin build_info clean all
