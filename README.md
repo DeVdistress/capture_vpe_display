@@ -7,13 +7,13 @@ test project for build git:://git.ti.com/glsdk/omapdrmtest.git
 cd /home/workspace
 
 git clone git://git.omapzoom.org/repo/libdce.git
-
-cd /home/workspace/libdce
 ```
 
 run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
 
 ```bash
+cd /home/workspace/libdce
+
 ./autogen.sh --host=arm-linux-gnueabihf
 
 make
