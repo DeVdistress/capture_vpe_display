@@ -69,6 +69,23 @@ make viddec3test
 
 - [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
+## MAIN INFO ABOUT DSS
+- [DSS](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components/Kernel/Kernel_Drivers/Display/DSS.html?highlight=dss)
+
+- [Introduction to Graphics and Display](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components/Graphics/Graphics_and_Display.html)
+
+- [Video Graphics Test](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Graphics_Test.html?highlight=dss)
+
+- [Omap_drm documentation](https://e2e.ti.com/support/processors/f/791/t/706339)
+
+- [src libdrm](git://anongit.freedesktop.org/git/mesa/drm)
+
+- [simple utilities for KMS ](https://github.com/tomba/kmsxx)
+
+- [src dual-camera-demo](http://git.ti.com/sitara-linux/dual-camera-demo/trees/master)
+
+- [desciptions dual camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
+
 ## trouble with interlaced video
 **1.** my topic in texas instruments
  [AM5728: Interlaced video capture issue](https://e2e.ti.com/support/processors/f/791/t/835475)
