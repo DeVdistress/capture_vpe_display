@@ -78,13 +78,13 @@ make viddec3test
 
 - [Omap_drm documentation](https://e2e.ti.com/support/processors/f/791/t/706339)
 
+    + (src libdrm) - git://anongit.freedesktop.org/git/mesa/drm
+
 - [Simple utilities for KMS ](https://github.com/tomba/kmsxx)
 
 - [src dual-camera-demo](http://git.ti.com/sitara-linux/dual-camera-demo/trees/master)
 
 - [Desciptions dual camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
-
--- (src libdrm) - git://anongit.freedesktop.org/git/mesa/drm
 
 ## trouble with interlaced video
 **1.** my topic in texas instruments
