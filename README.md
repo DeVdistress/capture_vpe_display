@@ -74,19 +74,19 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 
     + (**src dual-camera-demo**) - http://git.ti.com/sitara-linux/dual-camera-demo/trees/master
 
-- [writing to the framebuffer](http://seenaburns.com/2018/04/04/writing-to-the-framebuffer/)
+- [Writing to the framebuffer](http://seenaburns.com/2018/04/04/writing-to-the-framebuffer/)
 
 ## MAIN INFO ABOUT Deinterlace
 - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
 
-- [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+- [Not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
 
 ## MAIN INFO ABOUT v4l2 capture video
-- [capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
+- [Capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
 
-- [capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
+- [Capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
 
-- [doc about v4l2 from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
+- [Doc about v4l2 from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
 
 ## trouble with interlaced video
 **1.** my topic in texas instruments
