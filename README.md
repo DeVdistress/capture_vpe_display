@@ -74,6 +74,8 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 
     + (**src dual-camera-demo**) - http://git.ti.com/sitara-linux/dual-camera-demo/trees/master
 
+- [writing to the framebuffer](http://seenaburns.com/2018/04/04/writing-to-the-framebuffer/)
+
 ## MAIN INFO ABOUT Deinterlace
 - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
 
