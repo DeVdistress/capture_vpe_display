@@ -1,25 +1,6 @@
 # capture_vpe_display
 > ***test project for build git:://git.ti.com/glsdk/omapdrmtest.git***
 
-## how build libdce
-
-```bash
-cd /home/workspace
-
-git clone git://git.omapzoom.org/repo/libdce.git
-```
-
-run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
-
-```bash
-cd /home/workspace/libdce
-
-./autogen.sh --host=arm-linux-gnueabihf
-
-make
-
-make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
-```
 ## how build
 - **build capture_vpe_display, v4l2capturedisplay, videnc2test**
 
@@ -40,6 +21,26 @@ make videnc2test
 ###### TODO: the problem with the building viddec3test, it is necessary to compile ffmpeg(avformat.h avcodec.h)
 ```bash
 make viddec3test
+```
+
+## how build libdce
+
+```bash
+cd /home/workspace
+
+git clone git://git.omapzoom.org/repo/libdce.git
+```
+
+run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
+
+```bash
+cd /home/workspace/libdce
+
+./autogen.sh --host=arm-linux-gnueabihf
+
+make
+
+make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi
 ```
 
 ## MAIN INFO
@@ -73,12 +74,12 @@ make viddec3test
 
     + (**src dual-camera-demo**) - http://git.ti.com/sitara-linux/dual-camera-demo/trees/master
 
-## MAIN INFO Deinterlace
+## MAIN INFO ABOUT Deinterlace
 - [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
 
 - [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
 
-## info about v4l2 capture video
+## MAIN INFO ABOUT v4l2 capture video
 - [capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
 
 - [capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
