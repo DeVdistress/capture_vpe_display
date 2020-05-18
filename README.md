@@ -42,32 +42,19 @@ make videnc2test
 make viddec3test
 ```
 
-## info for reading v4l2 capture video
-
-- [capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
-
-- [capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
-
-- [doc about v4l2 from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
-
 ## MAIN INFO
 - [Processor SDK Linux](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/index.html)
 
-- [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
-
 - [Gstreamer pipelines for AM572x](https://developer.ridgerun.com/wiki/index.php?title=Gstreamer_pipelines_for_AM572x)
 
-- [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+- [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
-- [Dual Camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
-
+## MAIN INFO ABOUT DCE
 - [Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
 
 - [IPC](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_IPC.html?highlight=dce)
 
 - [Software_Developers_Guide](https://processors.wiki.ti.com/index.php/DRA7xx_GLSDK_Software_Developers_Guide)
-
-- [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
 ## MAIN INFO ABOUT DSS
 - [DSS](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components/Kernel/Kernel_Drivers/Display/DSS.html?highlight=dss)
@@ -82,9 +69,21 @@ make viddec3test
 
 - [Simple utilities for KMS ](https://github.com/tomba/kmsxx)
 
-- [Desciptions dual camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
+- [Descriptions dual camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
 
     + (**src dual-camera-demo**) - http://git.ti.com/sitara-linux/dual-camera-demo/trees/master
+
+## MAIN INFO Deinterlace
+- [About Deinterlace](https://www.linuxtv.org/downloads/legacy/video4linux/API/V4L2_API/spec-single/v4l2.html#v4l2-field)
+
+- [not working plugin for deinterlacer](https://github.com/GStreamer/gst-plugins-good/blob/master/sys/v4l2/gstv4l2src.c)
+
+## info about v4l2 capture video
+- [capturing a webcam stream using v4l2](http://jwhsmith.net/2014/12/capturing-a-webcam-stream-using-v4l2/)
+
+- [capture-v4l2](https://jayrambhia.com/blog/capture-v4l2)
+
+- [doc about v4l2 from www.kernel.org](https://www.kernel.org/doc/html/v4.14/media/uapi/v4l/capture.c.html)
 
 ## trouble with interlaced video
 **1.** my topic in texas instruments
