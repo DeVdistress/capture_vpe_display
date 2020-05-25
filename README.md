@@ -25,12 +25,16 @@ make viddec3test
 
 ## how build ffmpeg
 
-run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
-
 ```bash
 cd /home/workspace
 
 git clone https://git.ffmpeg.org/ffmpeg.git ffmpeg
+```
+
+run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
+
+```bash
+cd /home/workspace/ffmpeg
 
 ./configure --enable-cross-compile --cross-prefix=arm-linux-gnueabihf- --arch=arm --target-os=linux --prefix=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr --enable-gpl --enable-nonfree --extra-cflags="-I/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/include -fPIC" --extra-ldflags="-L/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.10/linux-devkit/sysroots/armv7ahf-neon-linux-gnueabi/usr/lib" --extra-libs=-ldl --disable-doc --enable-shared --extra-cxxflags="-fPIC"
 
