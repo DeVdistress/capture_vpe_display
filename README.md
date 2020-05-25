@@ -48,7 +48,7 @@ make install
 ```bash
 cd /home/workspace
 
-git clone git://git.omapzoom.org/repo/libdce.git
+git clone git://git.omapzoom.org/repo/libdce.git libdce
 ```
 
 run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
