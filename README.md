@@ -25,6 +25,8 @@ make viddec3test
 
 ## how build ffmpeg
 
+run 'mc_sitara.desktop' or '/home/workspace/start_scripts/05_02_00_10/start_mc_for_sitara'
+
 ```bash
 cd /home/workspace
 
