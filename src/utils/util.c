@@ -260,8 +260,13 @@ disp_get_fb(struct display *disp)
 	struct buffer **bufs = disp_get_buffers(disp, 1);
 	if (!bufs)
 		return NULL;
+
+//DeVdistress no fill
+#if(1)
 	fill(bufs[0], 42);
 	disp_post_buffer(disp, bufs[0]);
+#endif
+
 	return bufs[0];
 }
 

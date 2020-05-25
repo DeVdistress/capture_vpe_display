@@ -663,12 +663,12 @@ int display_buffer(struct vpe *vpe, int index)
 	int ret;
 	struct buffer *buf;
 
-
 	buf = vpe->disp_bufs[index];
 	
 	// if used scaling 
 	// ret = disp_post_vid_buffer(vpe->disp, buf, 0, 0, vpe->dst.width, vpe->dst.height);
 
+//  centure video
 	ret = disp_post_vid_buffer(vpe->disp, buf, (vpe->disp->width - vpe->dst.width)/2,
 			(vpe->disp->height - vpe->dst.height)/2, vpe->dst.width, vpe->dst.height);
 

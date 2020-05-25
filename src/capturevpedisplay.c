@@ -229,6 +229,21 @@ int main(int argc, char *argv[])
 
 	struct	vpe *vpe;
 
+#if(1)
+	// у меня не получилось запустить скрипт под дебагом с начальным ./dual_camera -platform linuxfb 1
+	// замутил этот скрипт
+
+	#define MY_ARGC_MY 11
+
+	argc = (int)MY_ARGC_MY;
+
+	const char *argv_my[MY_ARGC_MY] = {"./capture_vpe_display", "704", "280", "yuyv", \
+			"704", "560", "yuyv", "1", "3", "-s", "35:1024x768"};
+
+	for(int i = 0; i < argc; ++i)
+		argv[i] = (char*)argv_my[i];
+#endif
+
 	if (argc != 11) {
 		printf (
 		"USAGE : <SRCWidth> <SRCHeight> <SRCFormat> "
