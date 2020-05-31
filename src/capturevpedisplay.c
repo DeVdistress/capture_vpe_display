@@ -230,9 +230,8 @@ int main(int argc, char *argv[])
 	struct	vpe *vpe;
 
 #if(1)
-	// у меня не получилось запустить скрипт под дебагом с начальным ./dual_camera -platform linuxfb 1
-	// замутил этот скрипт
-
+	// I could not run the script under the debug with the initial parameters
+	// here is my crutch this script
 	#define MY_ARGC_MY 11
 
 	argc = (int)MY_ARGC_MY;

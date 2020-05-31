@@ -70,6 +70,9 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 
 - [Video Analytics example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Video_Analytics.html)
 
+## MAIN INFO ABOUT KMS
+- [Kernel Mode Setting (KMS)](http://heim.ifi.uio.no/~knuto/kernel/4.14/gpu/drm-kms.html?highlight=kernel%20mode%20setting%20kms)
+
 ## MAIN INFO ABOUT DCE
 - [Multimedia](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Foundational_Components_Multimedia_IVAHD.html?highlight=libdce)
 
