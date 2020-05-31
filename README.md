@@ -91,7 +91,9 @@ make install DESTDIR=/home/workspace/ti-processor-sdk-linux-am57xx-evm-05.02.00.
 
     + (**src libdrm**) - git://anongit.freedesktop.org/git/mesa/drm
 
-- [Simple utilities for KMS ](https://github.com/tomba/kmsxx)
+- [Graphics Display Getting Started Guide](https://processors.wiki.ti.com/index.php/Graphics_Display_Getting_Started_Guide#kmscube)
+	
+	+ [**Simple utilities for KMS**](https://github.com/tomba/kmsxx)
 
 - [Descriptions dual camera example](http://software-dl.ti.com/processor-sdk-linux/esd/docs/latest/linux/Examples_and_Demos/Application_Demos/Dual_Camera_Demo.html)
 
